@@ -1,0 +1,11 @@
+## YAML Template.
+language: java
+
+addons:
+    sonarcloud:
+        organization: "juanuribeb-github"
+        token:
+             secure: "ZSspbM/WqppeCWxcUxTskETecUxDwvu1izmk+P6xHsE+VqgmfbscmWRPu45b6V9yLcXcETC0f/lt8RSo31Up1fwLrOwbXM0XnswTEpMJ3BsUMLwmqAkXNPpDA8L6YQEdwFNGBmaHC8/8EfnelO8nGik5bkBcxuuUNRYnF4+ml65UJT0bIxGm9qbVx5Oe2RIDxphN4hYoMw8FGqAqWShzAmedyH3cNKMvwFulN9MBsMv+y36H9K0/mZSQFvgbARMrkXufpJ+w1THNmH/6/Dcvd11I1SDLdvudEsxkdnl4PE97P7kBfl47xYIZhBSn6X7WD0kM5Ffhv66EwLf2ph7qgHsVPfvYpa4F8w70mmu99UQhB8xDhsFfIp0JEaON6O+cuYch048hpiMX2i2lllekRtMUEPdFmlmueQVlX4fSXyGQbhHNIHsZwvJl+0SGndcdyHvHNkNKB39V9A8/ggzO6k8DWROYaVSS/pM73+saNAUqKRAw5melJP4uTa1PbotJBi2U19erBx0DpBUKxAPz3uz56FSmnsib8N6sAy4AYubAkFpE2j/zBbbOAywZ23x5Q4EiAxArwZ/GrlmpJNI6BRVIvtDekmhuwx3t61BMRBgg2avw1stFlAlYxEyOi8DL3547m2lz/7/FDs82cnYJQtYgS2wXPIaHEfiP2YAs2a0="
+script:
+    - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+---
