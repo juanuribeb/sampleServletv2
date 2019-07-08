@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.udem.java2.ejemplo1</groupId>
-    <artifactId>sampleServletsJuanRamirez</artifactId>
+    <artifactId>sampleServletsv2</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>sampleServletsJuanRamirez</name>
+    <name>sampleServletsv2</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
